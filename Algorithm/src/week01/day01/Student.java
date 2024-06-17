@@ -1,4 +1,4 @@
-package week01_day01;
+package week01.day01;
 
 public class Student {
 
