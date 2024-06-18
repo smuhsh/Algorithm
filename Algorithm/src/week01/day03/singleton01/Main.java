@@ -1,4 +1,4 @@
-package week01.day03;
+package week01.day03.singleton01;
 /*
  * 작성일:2024-06-19
  * 작성자:황석현
@@ -18,6 +18,11 @@ package week01.day03;
 public class Main {
 
 	public static void main(String[] args) {
+		Singleton instance = Singleton.getInstance(1);
+		Singleton instance2 = Singleton.getInstance(2);
+		
+		instance.printMsg();
+		instance2.printMsg();
 		
 	}
 
