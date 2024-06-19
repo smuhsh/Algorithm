@@ -16,6 +16,8 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		
+		System.out.println("최빈수를 구합니다. 숫자를 입력해주세요 :");
 		Scanner sc = new Scanner(System.in);
 		
 		int []arr = new int[10];
@@ -40,12 +42,31 @@ public class Main {
 		 * index → 출현한 수
 		 * index 값 → index(출현한 수)가 몇번 나왔는지 저장하는 용도
 		 * 
-		 * mode[3] = 5 → "3번숫자가 5번출현했다" 라는 의미
+		 * store[3] = 5 → "3번숫자가 5번출현했다" 라는 의미
 		 * 
 		 * */
+		
+		//sc → 1 2 2 3 1 4 2 2 4 3
 		for(int i=0; i<10; i++) {
 			store[arr[i]]++;
 		}
+		//store[1] == 2;
+		//store[2] == 4;
+		//store[3] == 2;
+		//store[4] == 2;
+		
+		int storeNum = 0; //최빈수
+		int storeCnt = 0; //최빈수가 나온횟수
+		
+		for(int i=0; i<10; i++) {
+			if(storeCnt < store[i]) {
+				storeCnt = store[i];
+				storeNum = i;
+			}
+		}
+		
+		System.out.println("최빈수는 :"+storeNum+"cnt :"+storeCnt);
+		
 	}
 
 }
