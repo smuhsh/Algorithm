@@ -36,8 +36,8 @@ public class Main {
 		Singleton instance1 = Singleton.getInstance(1);
 		Singleton instance2 = Singleton.getInstance(2);
 		
-		//System.out.println(instance1.hashCode());
-		//System.out.println(instance2.hashCode());
+		System.out.println(instance1.hashCode());
+		System.out.println(instance2.hashCode());
 		
 		instance1.printMsg();
 		instance2.printMsg();
