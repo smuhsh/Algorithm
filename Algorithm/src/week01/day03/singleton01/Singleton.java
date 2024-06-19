@@ -14,7 +14,6 @@ public class Singleton extends Object {
 
 	public static Singleton getInstance(int msg) {
 		if (instance == null) {
-		//if (instance.equals(null)) {
 			instance = new Singleton(msg);
 		}
 		return instance;
