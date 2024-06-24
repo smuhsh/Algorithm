@@ -1,6 +1,5 @@
 package week02.day01;
 
-import java.io.InputStream;
 import java.util.Scanner;
 
 /*
