@@ -12,7 +12,6 @@ import java.util.Scanner;
  * 			→HELLOwORLd
  * 
  * 		Tag) 배열, for, if
- * asdf
  * 
  * */
 public class Main {
