@@ -9,7 +9,6 @@ package week09.day01;
  * 		
  * 		다음 java 로 구현된 프로그램을 분석하여 그 실행 결과를 쓰시오.
  * */
-
 //변수 사용의 우선순위는 자기 자신의 블록 안의 값이 가장높은 우선순위를 가진다
 class Static {
 	public int a = 20;
